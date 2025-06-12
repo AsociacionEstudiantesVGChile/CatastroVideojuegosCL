@@ -1,0 +1,22 @@
+{
+  "name": "asociacion-videojuegos-cl",
+  "version": "1.0.0",
+  "description": "Un proyecto web para la Asociación de Estudiantes de Videojuegos Chile, que entrega información sobre la asociación, oportunidades de voluntariado y una función de búsqueda de videojuegos chilenos.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'El proceso de construcción aún no está definido.'"
+  },
+  "keywords": [
+    "videojuegos",
+    "chile",
+    "asociación",
+    "estudiantes"
+  ],
+  "author": "Asociación de Estudiantes de Videojuegos Chile",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

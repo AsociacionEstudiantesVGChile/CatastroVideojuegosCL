@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación de Estudiantes de Videojuegos Chile</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="../img/logo-asociacion.png" alt="Logo Asociación de Estudiantes de Videojuegos Chile" width="64" height="64">
+            <h1>Asociación de Estudiantes de Videojuegos Chile</h1>
+        </div>
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sections/about.html">Sobre Nosotros</a></li>
+                <li><a href="sections/volunteer.html">Oportunidades de Voluntariado</a></li>
+                <li><a href="sections/join.html">Cómo Unirse</a></li>
+                <li><a href="sections/search.html">Buscar Videojuegos Chilenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bienvenido a la Asociación de Estudiantes de Videojuegos Chile</h2>
+        <p>Tu espacio para todo lo relacionado con los videojuegos en Chile. Explora nuestras secciones para conocer más sobre la asociación, participar y descubrir juegos locales.</p>
+        <section>
+            <h3>Sobre Nosotros</h3>
+            <img src="img/placeholder-sobre-nosotros.jpg" alt="Imagen sobre nosotros" width="300" height="180">
+            <p>
+                Somos una Asociación que conecta a representantes de diferentes carreras de videojuegos en Chile, con participación de estudiantes de la UBO, UGM, UNIACC, USEK, UTAL, UST, UNAB y UFT.<br><br>
+                <strong>Historia:</strong> Iniciamos en 2023 gracias a la motivación de estudiantes de la USEK y la UNAB, con el objetivo de generar alianzas y actividades entre estudiantes. Hoy, la asociación está abierta a cualquier persona interesada en el desarrollo de videojuegos, sumando ya 22 miembros generales y representantes de cada institución, además de la directiva.
+            </p>
+            <a href="sections/about.html">Leer más</a>
+        </section>
+    </main>
+    <!-- Noticias Recientes -->
+    <section id="noticias-recientes" style="max-width: 950px; margin: 2rem auto;">
+        <h2>Noticias Recientes</h2>
+        <div class="carrusel-noticias">
+            <button class="carrusel-flecha" id="prevNoticia">&#8592;</button>
+            <div class="carrusel-paneles">
+                <article class="noticia-panel">
+                    <img src="img/placeholder-noticia1.jpg" alt="Imagen noticia 1" width="300" height="180">
+                    <h3>Lanzamiento de la nueva GameJam Chile 2025</h3>
+                    <p>¡Ya están abiertas las inscripciones para la GameJam Chile 2025! Participa y demuestra tu talento junto a otros desarrolladores nacionales.</p>
+                    <a href="#">Leer más</a>
+                </article>
+                <article class="noticia-panel">
+                    <img src="img/placeholder-noticia2.jpg" alt="Imagen noticia 2" width="300" height="180">
+                    <h3>Charla: Mujeres en la industria de videojuegos</h3>
+                    <p>No te pierdas nuestra próxima charla enfocada en el rol de las mujeres en el desarrollo de videojuegos en Chile.</p>
+                    <a href="#">Leer más</a>
+                </article>
+                <article class="noticia-panel">
+                    <img src="img/placeholder-noticia3.jpg" alt="Imagen noticia 3" width="300" height="180">
+                    <h3>Nuevo convenio con universidades</h3>
+                    <p>La asociación ha firmado un convenio con universidades para impulsar la formación y empleabilidad en el sector.</p>
+                    <a href="#">Leer más</a>
+                </article>
+                <!-- Puedes agregar más artículos aquí -->
+            </div>
+            <button class="carrusel-flecha" id="nextNoticia">&#8594;</button>
+        </div>
+    </section>
+    <!-- Formulario de suscripción Mailchimp -->
+    <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #mc_embed_signup {
+                background: #fff;
+                clear: left;
+                font: 14px Helvetica, Arial, sans-serif;
+                width: 700px;
+                margin: 2rem auto;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+                padding: 1rem 2rem;
+            }
+        </style>
+        <div id="mc_embed_signup">
+            <form action="https://gmail.us17.list-manage.com/subscribe/post?u=80541521cbe63af1166bfafcf&amp;id=1d26299d62&amp;f_id=003ac2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div id="mc_embed_signup_scroll">
+                    <h2>Suscripción a contacto de la Asociación de Estudiantes de Videojuegos Chile</h2>
+                    <div class="indicates-required"><span class="asterisk">*</span> indica que es obligatorio</div>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Dirección de correo electrónico <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">Nombre <span class="asterisk">*</span></label>
+                        <input type="text" name="FNAME" class="required text" id="mce-FNAME" required>
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-LNAME">Apellidos <span class="asterisk">*</span></label>
+                        <input type="text" name="LNAME" class="required text" id="mce-LNAME" required>
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-PHONE">Número de teléfono </label>
+                        <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE">
+                    </div>
+                    <div class="mc-field-group size1of2">
+                        <label for="mce-BIRTHDAY-month">Cumpleaños </label>
+                        <div class="datefield">
+                            <span class="subfield monthfield">
+                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month">
+                            </span>
+                            <span class="subfield dayfield">
+                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day">
+                            </span>
+                            <span class="small-meta nowrap">( mm / dd )</span>
+                        </div>
+                    </div>
+                    <div class="mc-field-group input-group">
+                        <strong>Selecciona todos los tipos de participación que te interesan:</strong>
+                        <ul>
+                            <li><input type="checkbox" name="group[9][1]" id="mce-group[9]-9-0"><label for="mce-group[9]-9-0">Oyente/Participante de los eventos</label></li>
+                            <li><input type="checkbox" name="group[9][2]" id="mce-group[9]-9-1"><label for="mce-group[9]-9-1">Charlista</label></li>
+                            <li><input type="checkbox" name="group[9][4]" id="mce-group[9]-9-2"><label for="mce-group[9]-9-2">Tallerista</label></li>
+                            <li><input type="checkbox" name="group[9][8]" id="mce-group[9]-9-3"><label for="mce-group[9]-9-3">Mostrar mi DEMO</label></li>
+                            <li><input type="checkbox" name="group[9][16]" id="mce-group[9]-9-4"><label for="mce-group[9]-9-4">Prensa/Cobertura</label></li>
+                            <li><input type="checkbox" name="group[9][32]" id="mce-group[9]-9-5"><label for="mce-group[9]-9-5">Entregar mentoría en Gamejams</label></li>
+                        </ul>
+                    </div>
+                    <div class="mc-field-group input-group">
+                        <strong>Selecciona todos los tipos de eventos que te interesan:</strong>
+                        <ul>
+                            <li><input type="checkbox" name="group[10][64]" id="mce-group[10]-10-0"><label for="mce-group[10]-10-0">Gamejams</label></li>
+                            <li><input type="checkbox" name="group[10][128]" id="mce-group[10]-10-1"><label for="mce-group[10]-10-1">Eventos de charlas</label></li>
+                            <li><input type="checkbox" name="group[10][256]" id="mce-group[10]-10-2"><label for="mce-group[10]-10-2">Eventos de talleres</label></li>
+                            <li><input type="checkbox" name="group[10][512]" id="mce-group[10]-10-3"><label for="mce-group[10]-10-3">Torneos de videojuegos</label></li>
+                            <li><input type="checkbox" name="group[10][1024]" id="mce-group[10]-10-4"><label for="mce-group[10]-10-4">Meetups/Encuentros</label></li>
+                            <li><input type="checkbox" name="group[10][2048]" id="mce-group[10]-10-5"><label for="mce-group[10]-10-5">Transmisiones en vivo</label></li>
+                        </ul>
+                    </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_80541521cbe63af1166bfafcf_1d26299d62" tabindex="-1" value="">
+                    </div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Suscribirse">
+                            <p style="margin: 0px auto;">
+                                <a href="http://eepurl.com/jcma4c" title="Mailchimp: marketing por correo electrónico fácil y divertido">
+                                    <span style="display: inline-block; background-color: transparent; border-radius: 4px;">
+                                        <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;">
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        <script type="text/javascript">
+            (function($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0]='EMAIL';ftypes[0]='email';
+                fnames[1]='FNAME';ftypes[1]='text';
+                fnames[2]='LNAME';ftypes[2]='text';
+                fnames[4]='PHONE';ftypes[4]='phone';
+                fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+                fnames[3]='ADDRESS';ftypes[3]='address';
+                fnames[6]='COMPANY';ftypes[6]='text';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+    </div>
+    <footer>
+        <p>&copy; 2025 Asociación de Estudiantes de Videojuegos Chile</p>
+        <div class="redes-sociales">
+            <a href="https://discord.gg/tu-invitacion" target="_blank" title="Discord">
+                <img src="img/icon-discord.png" alt="Discord" width="32" height="32">
+            </a>
+            <a href="https://instagram.com/tuusuario" target="_blank" title="Instagram">
+                <img src="img/icon-instagram.png" alt="Instagram" width="32" height="32">
+            </a>
+            <a href="https://youtube.com/tuusuario" target="_blank" title="YouTube">
+                <img src="img/icon-youtube.png" alt="YouTube" width="32" height="32">
+            </a>
+            <a href="https://chat.whatsapp.com/tu-grupo" target="_blank" title="WhatsApp">
+                <img src="img/icon-whatsapp.png" alt="WhatsApp" width="32" height="32">
+            </a>
+            <a href="https://tiktok.com/@tuusuario" target="_blank" title="TikTok">
+                <img src="img/icon-tiktok.png" alt="TikTok" width="32" height="32">
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
