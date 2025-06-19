@@ -1,0 +1,25 @@
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background: var(--azul);
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid var(--naranjo);
+}
+.redes-sociales {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.redes-sociales a img {
+  transition: transform 0.2s, filter 0.2s;
+  filter: grayscale(0.2) brightness(0.95);
+}
+.redes-sociales a img:hover {
+  transform: scale(1.15);
+  filter: none;
+}
