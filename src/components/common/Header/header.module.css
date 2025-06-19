@@ -1,0 +1,56 @@
+.header {
+  background: var(--azul);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 4px solid var(--naranjo);
+}
+
+/* Logo y título */
+.logo-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.logo-header img {
+  display: block;
+}
+.logo-header h1 {
+  font-size: 1.7rem;
+  margin: 0;
+  font-weight: 700;
+  color: var(--amarillo);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #0002;
+}
+
+/* Navegación principal */
+.nav-principal ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  background: var(--azul);
+  border-radius: 8px;
+}
+.nav-principal li {
+  margin: 0;
+}
+.nav-principal a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-principal a:hover,
+.nav-principal a:focus {
+  background: var(--naranjo);
+  color: #222;
+}
