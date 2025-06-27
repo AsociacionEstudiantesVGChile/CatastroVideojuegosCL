@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Juego A",
+    "description": "Un juego de plataformas chileno.",
+    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego A",
+    "tags": ["plataformas", "aventura"],
+    "year": 2023,
+    "developer": "Estudio X"
+  },
+  {
+    "title": "Juego B",
+    "description": "Juego de puzzles con arte local.",
+    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego B",
+    "tags": ["puzzle", "arte"],
+    "year": 2024,
+    "developer": "Estudio Y"
+  }
+]

@@ -3,6 +3,9 @@ import Footer from "../../components/common/Footer/Footer";
 
 import styles from "./search.module.css";
 
+import data from "../../data/videojuegos.json"
+import CardGame from "../../components/Search/CardGame";
+
 const Search = () => {
   return (
     <>
@@ -47,7 +50,12 @@ const Search = () => {
                 style={{ marginLeft: "1rem" }}
               />
             </div>
-            <div id="search-results"></div>
+            <div id="search-results">
+              {data.map(gameData =>
+                <CardGame title={gameData.title} devName={gameData.developer} year={gameData.year}
+                          description={gameData.description} imgUrl={gameData.img_url} tags={gameData.tags}/>
+              )}
+            </div>
           </div>
         </div>
       </section>
