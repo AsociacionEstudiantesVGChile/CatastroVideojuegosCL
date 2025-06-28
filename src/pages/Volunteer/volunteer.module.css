@@ -1,0 +1,91 @@
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.mainContent {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	flex: 1;
+	min-width: 300px;
+}
+
+.introSection {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.benefitsSection {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.benefitsSection h2 {
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 1.8em;
+}
+
+.benefitsSection ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.benefitsSection li {
+	margin-bottom: 10px;
+	font-size: 1ln;
+	color: #555;
+	position: relative;
+	padding-left: 15px;
+}
+
+.benefitsSection li::before {
+	content: '•';
+	color: #007bff;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
+
+.volunteerCardsSection {
+	flex: 2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pageTitle {
+	text-align: left;
+	color: #2c3e50;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 2.5em;
+}
+
+.pageDescription {
+	text-align: left;
+	color: #666;
+	margin-bottom: 0;
+	line-height: 1.6;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
