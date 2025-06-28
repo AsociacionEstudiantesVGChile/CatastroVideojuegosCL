@@ -14,5 +14,21 @@
     "tags": ["puzzle", "arte"],
     "year": 2024,
     "developer": "Estudio Y"
+  },
+  {
+    "title": "Juego C",
+    "description": "Juego de RPG de aventuras",
+    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego C",
+    "tags": ["rpg", "aventura"],
+    "year": 2025,
+    "developer": "Estudio X"
+  },
+  {
+    "title": "Juego D",
+    "description": "Juego de puzzles plataformero.",
+    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego D",
+    "tags": ["plataformas", "puzzle"],
+    "year": 2023,
+    "developer": "Estudio Z"
   }
 ]
