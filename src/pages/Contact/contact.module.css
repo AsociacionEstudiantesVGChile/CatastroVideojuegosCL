@@ -11,7 +11,7 @@
 }
 
 .formularioContainer form {
-  text-align: left;
+  text-align: center;
   background: #f9f9f9;
   padding: 3rem;
   border-radius: 8px;
@@ -38,6 +38,26 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.formularioContainer form input.error {
+  border-color: #dc3545;
+  background-color: #ffe6e6;
+}
+
+.emailError {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.5rem;
+  border-radius: 4px;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
 }
 
 .formularioContainer form button {
@@ -46,10 +66,17 @@
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  display: block;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 .formularioContainer form button:disabled {
   background: #ccc;
   cursor: not-allowed;
+}
+
+.formularioContainer form button:hover:not(:disabled) {
+  background: #0056b3;
 } 
