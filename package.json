@@ -18,6 +18,9 @@
     "estudiantes"
   ],
   "dependencies": {
+    "@dahoom/disposable-email": "^0.3.253",
+    "@emailjs/browser": "^4.4.1",
+    "email-seems-valid": "^0.0.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.6.2"

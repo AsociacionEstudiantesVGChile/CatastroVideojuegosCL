@@ -30,6 +30,9 @@ const Header = () => {
           <li>
             <Link to="/volunteer">Oportunidades de Voluntariado</Link>
           </li>
+          <li>
+            <Link to="/contact">Contacto</Link>
+          </li>
         </ul>
       </nav>
     </header>
