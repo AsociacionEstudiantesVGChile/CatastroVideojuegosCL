@@ -1,0 +1,68 @@
+[
+	{
+		"title": "Voluntariado Tutores",
+		"description": "Descripción del voluntariado de Tutores.",
+		"requirements": [
+			"Conocer y manejar algún área del desarrollo de videojuegos.",
+			"Tener disponibilidad de por lo menos 1 hora a la semana para realizar una sesión.",
+			"Ser una persona amable y paciente.",
+			"Ser una persona con interés en enseñar.",
+			"Ser mayor de edad."
+		],
+		"formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf17yJ7f1ppQzHBk54Nepk10kQHIeO4JunkCvLTaDcHzubzhg/viewform",
+		"imgUrl": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVBEx-RuX3IC5c8K9lHzTnzMGo5wdeBK_qE-2HuG8Vh6AgsXcru1jp9InXVD8RR-kIlZX_XeeIYp3a5k7oxr1jc2kGyTOq9O7X1KwD9wVvBq0qJaFpJigXElw3SxngguW4sep6_twNrzI5A4690DKYJd=w1200?key=CWtuDXS7p6oXdN5CNUtxbg"
+	},
+	{
+		"title": "Voluntariado Twitch",
+		"description": "Descripción del voluntariado de Twitch.",
+		"requirements": [
+			"Ser una persona creativa",
+			"Tener ojalá experiencia creando preguntas para entrevistas",
+			"Tener experiencia viendo o haciendo transmisiones en vivo",
+			"Conocer la plataforma twitch desde la perspectiva de moderación de un canal",
+			"Ser mayor de edad"
+		],
+		"formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeR7Ty26T1WEMKveZSnbm35a2XQ5WiS0Wr_g0--MX8O1Gn-KA/viewform",
+		"imgUrl": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCn7mmn1TX8NB-7EWMXvlmjMoEgSq0GmTS8yv22TqR--W4-iLeSHl2RZQHHH9trBT0taAumjduWTxt9IvwGFgXZ-D590LuJMNUulxMtWuWoOStN0JyEhR5dbFmzaXcwCO4Lcr_RsCJNK9iAEEpnDuQ1PA=w1200?key=lDyTlqziRQh7DqnolGOPTg"
+	},
+	{
+		"title": "Voluntariado Discord",
+		"description": "Descripción del voluntariado de Discord.",
+		"requirements": [
+			"Saber usar bots de Discord",
+			"Ser una persona creativa",
+			"Tener disponibilidad horaria para realizar eventos",
+			"Saber usar el sistema de roles de Discord",
+			"Saber usar Canvas",
+			"Ser mayor de edad"
+		],
+		"formUrl": "https://docs.google.com/forms/d/e/1FAIpQLScGRcpN9w9lRu5bpdqrrRHEEIim9tdZkgWmv4plXnHTU8saeA/viewform",
+		"imgUrl": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCt1dTVy_6NHwDbLJ-HnhiLEcS0uzBVbi-tqGKttyv5z-rHCKo2hsd9b_ATbBsu7dz6HVu7RZlpHpsMTX2qa6SkstI5tBBCrGZAQCX0aeQYhfAng-tAmfqFDNMPscJn1IQ1TmKcDlLAosZNl490EeI3yg=w1200?key=k_VQDvqIdLYBaiKLpBqtKA"
+	},
+	{
+		"title": "Voluntariado Videos",
+		"description": "Descripción del voluntariado de Videos.",
+		"requirements": [
+			"Conocer algún software de grabación (OBS, Camtasia, etc)",
+			"Conocer algún software de edición (Filmora, Capcut, etc)",
+			"Ser una persona creativa",
+			"Ser una persona con interés en enseñar",
+			"Ser mayor de edad"
+		],
+		"formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf6uUyUQRc09bKSetKsnwK5OJhKHpr5vfUGwibG14NpLS8anA/viewform",
+		"imgUrl": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVDyjbe6oTEWxKoYx3aGg-a3GPJ0BQZQxQEeWyCjqYPrpwKdcyOiGowI2ikOk-wmUoV_xVj1VSAvEnggm6aLRqvkAiUhBuPbVpqVkwwvUqLovmn58mYmMtf_fgfrFTI92PSWzpxQgh37wdOrwmLiWn2h=w1200?key=uRfRO_VHR6tjpLgmFNlS0g"
+	},
+	{
+		"title": "Voluntariado Manejo de RRSS",
+		"description": "Descripción del voluntariado de Manejo de RRSS.",
+		"requirements": [
+			"Ser una persona creativa",
+			"Tener ojalá experiencia de manejo de RRSS en otra comunidad",
+			"Tener experiencia creando contenido para RRSS",
+			"Manejo de Canva",
+			"Ser mayor de edad"
+		],
+		"formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSexfqJxBV4vgD61pd1i1b1QjvWi7jj0gB50jEH3J62sZMRaTQ/viewform",
+		"imgUrl": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCN1e8dYkz04LLLwuUNIh0auoO8fP24vidpXYVB9ShsiENsdbUp0mJBjxh4Qft7MMRiZQvTz3VeLdyye29dY4ZkunOj-XTdRCEiASNzHAxOfYhJfJlFsco1yQ0usckU1WaYAvxl-_59JBYEMj2PwwmhzA=w1200?key=16snk-OSYf4SYWfMhCIqag"
+	}
+]
