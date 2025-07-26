@@ -35,11 +35,7 @@ const Volunteer = () => {
 					{data.map((volunteer, index) => (
 						<VolunteerCard
 							key={index}
-							title={volunteer.title}
-							description={volunteer.description}
-							requirements={volunteer.requirements}
-							formUrl={volunteer.formUrl}
-							imgUrl={volunteer.imgUrl}
+							volunteer={volunteer}
 						/>
 					))}
 				</div>
