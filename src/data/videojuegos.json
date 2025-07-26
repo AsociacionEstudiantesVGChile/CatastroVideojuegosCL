@@ -1,34 +1,227 @@
 [
   {
-    "title": "Juego A",
-    "description": "Un juego de plataformas chileno.",
-    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego A",
-    "tags": ["plataformas", "aventura"],
-    "year": 2023,
-    "developer": "Estudio X"
+    "title": "Overhaul",
+    "description": "Una mini empresa de videojuegos de los 90s vende uno de sus m\u00e1s grandes proyectos por problemas econ\u00f3micos a otros desarrolladores, los cuales comienzan a realizar modificaciones para reemplazar el juego por otro con mejor resoluci\u00f3n. Dentro del juego original, los personajes presencian estas alteraciones, comienzan a ser reemplazados lentamente, por lo que buenos y malos unen fuerzas para acabar con esta nueva era, entre ellos, el jugador, quien maneja a un luchador que es introducido a este juego. Este no tiene idea sobre el reemplazo que est\u00e1 ocurriendo, pero luchar\u00e1 contra ellos para recuperar lo que le arrebataron, sus habilidades. Una voz en off intentar\u00e1 frenarlo a toda costa, y, a trav\u00e9s de un combate tipo Souls, el jugador se enfrentar\u00e1 a los enemigos y jefes del juego original bajo los efectos de una desventaja que se le impondr\u00e1.",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://punnky.itch.io/overhaul",
+      "trailer": "https://youtu.be/8_yrPHchvJw"
+    },
+    "tags": {
+      "genre": [
+        "Acción",
+        "Simulación"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "BalaStudio"
   },
   {
-    "title": "Juego B",
-    "description": "Juego de puzzles con arte local.",
-    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego B",
-    "tags": ["puzzle", "arte"],
-    "year": 2024,
-    "developer": "Estudio Y"
+    "title": "Psychofind: Relativity ",
+    "description": "Un juego donde detienes el tiempo para resolver puzzles y a la vez intercambias de personajes para pelear. ",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "",
+      "trailer": "https://drive.google.com/file/d/1-JsZE5QsLjwNEhSOK19yIVB_UTMclC1P/view?usp=drivesdk"
+    },
+    "tags": {
+      "genre": [
+        "Puzzles",
+        "Lucha"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "Psychobun "
   },
   {
-    "title": "Juego C",
-    "description": "Juego de RPG de aventuras",
-    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego C",
-    "tags": ["rpg", "aventura"],
-    "year": 2025,
-    "developer": "Estudio X"
+    "title": "Antes todo esto era campo",
+    "description": "En un solitario pueblo, en el cual las leyendas populares dictan la realidad al ser repetidas como verdad \u00fanica por sus habitantes. Une joven emprender\u00e1 desaf\u00edos fuera de su zona de confort para enfrentar por s\u00ed misme a \u201cles monstrues\u201d que protagonizan estas historias. Las cuales parecen estar conectadas mediante las acciones de una mal\u00e9vola corporaci\u00f3n que maneja todo el panorama del pueblo desde las sombras. Vi\u00e9ndose as\u00ed le joven en una disyuntiva entre mantener estas visiones de mundo socialmente aceptadas o tener el valor necesario para desaprender sus prejuicios.",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://antestodoestoeracampo.itch.io/ateec?fbclid=PAQ0xDSwKzQLlleHRuA2FlbQIxMAABpwPV8GLiYBk0FQAtXNik629mKG5C4EJgVw2ifBOLR3IWnflZN27r0V_WRh0F_aem_x40J5-MWNCCqQ6otx2SKbQ",
+      "trailer": "https://www.instagram.com/reel/DKSOCVYuHqX/?igsh=d2QybzBjeTJuOWFx"
+    },
+    "tags": {
+      "genre": [
+        "Novela Visual",
+        "Terror"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "Expropiaci\u00f3n Digital"
   },
   {
-    "title": "Juego D",
-    "description": "Juego de puzzles plataformero.",
-    "img_url": "https://placehold.co/600x400/262626/ffffff/png?text=Juego D",
-    "tags": ["plataformas", "puzzle"],
-    "year": 2023,
-    "developer": "Estudio Z"
+    "title": "La Tirana 2666",
+    "description": "Rpg por turnos - 2.5D\n\nKatari del Carmen, una joven chilena de 1965, quien vive en La Tirana, se ver\u00e1 envuelta en una serie de acontecimientos fant\u00e1sticos tras la misteriosa desaparici\u00f3n de su abuelo. Para encontrarlo, deber\u00e1 emprender un viaje por diversas \u00e9pocas, enfrent\u00e1ndose a anomal\u00edas temporales y a los estragos causados en el pueblo por los objetos m\u00e1gicos extraviados del temible Q\u2019ala Ch\u2019usu, los cuales tendr\u00e1 que recuperar para devolver la historia a su curso natural.\n",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "",
+      "trailer": ""
+    },
+    "tags": {
+      "genre": [
+        "RPG",
+        "Por turnos"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "Expropiaci\u00f3n Digital"
+  },
+  {
+    "title": "GATE (Demo)",
+    "description": "Un mini-metroidvania con contrareloj en el cual viajas hacia una dimensi\u00f3n 2D, donde cargas cartuchos en una consola port\u00e1til para activar poderes y cambios en el mundo.\n\nEl juego alude a los plataformeros cl\u00e1sicos de los 90s, la est\u00e9tica liminal y el quiebre de la cuarta pared.",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://drive.google.com/file/d/1wPEhW8s-_BYukV_vbVlCajUY_pO7zbWN/view?usp=drive_link",
+      "trailer": "https://www.instagram.com/p/DKHufeytzgS/"
+    },
+    "tags": {
+      "genre": [
+        "Metroidvania",
+        "Plataformero"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "UndeadPudu"
+  },
+  {
+    "title": "Pulse",
+    "description": "El humano se extingui\u00f3 a s\u00ed mismo y eres la \u00faltima robot con un coraz\u00f3n de energ\u00eda nuclear. Recobrando la energ\u00eda del reactor principal de la ciudad, la humanidad podr\u00e1 resurgir de sus cenizas.\n\nPulse se basa en el parry, dash y contrareloj como mec\u00e1nicas principales.",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://josephlamartine.itch.io/pulse",
+      "trailer": "https://www.youtube.com/watch?v=KJAHuaDwZrc"
+    },
+    "tags": {
+      "genre": [
+        "Aventura",
+        "Tercera Persona"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "UndeadPudu"
+  },
+  {
+    "title": "Mr. Mix",
+    "description": "Es un juego creepypasta basado en el creepypasta de Mr.Mix, el juego se public\u00f3 en youtube con un gameplay misterioso que alud\u00eda a que la historia tras el juego es real. \n\nEl video \"hoax\" tuvo 100k de visitas y fue mencionado en un top de Dross \"Los 7 juegos m\u00e1s perturbadores de la Deep Web\"",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://josephlamartine.itch.io/mr-mix",
+      "trailer": "https://www.youtube.com/watch?v=prQK2ZVnf_M"
+    },
+    "tags": {
+      "genre": [
+        "Terror",
+        "Primera Persona"
+      ],
+      "language": [
+        "Español"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "UndeadPudu"
+  },
+  {
+    "title": "Protect_Protocol_",
+    "description": "Protect Protocol is an action-adventure video game where exploration and combat revolves around the use of items on a crashed space cruiser that has become a hostile place raided by nature. Answer the call, find out what happened here and decide what you will protect!\n\nProtect Protocol es un videojuego de acci\u00f3n-aventuras donde la exploraci\u00f3n y el combate giran en torno al uso de objetos en una nave espacial accidentada que se ha convertido en un lugar hostil invadido por la naturaleza. \u00a1Responde al llamado, descubre qu\u00e9 sucedi\u00f3 aqu\u00ed y decide qu\u00e9 proteger\u00e1s!",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://parallaxfox.itch.io/protect-protocol",
+      "trailer": ""
+    },
+    "tags": {
+      "genre": [
+        "Acción",
+        "Aventura"
+      ],
+      "language": [
+        "Español", "Inglés"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "Parallax Fox"
+  },
+  {
+    "title": "Catty's Fishing Day",
+    "description": "Catty's Fishing Day is a clicker game where you embark on an exciting fishing journey filled with clicker mechanics, boss battles, and adorable ducks to aid you in catching the biggest fish! Discover new areas, upgrade your gear, and prepare for epic encounters with formidable Fish Bosses. Join Catty on her fishing journey and conquer the seas one catch at a time!\n\nCatty's Fishing Day es un juego Clicker donde te embarcas en una emocionante aventura de pesca llena de clics, batallas contra jefes y adorables patos que te ayudar\u00e1n a capturar los peces m\u00e1s grandes. Descubre nuevas zonas, mejora tu equipo y prep\u00e1rate para encuentros \u00e9picos con formidables Jefes Peces. \u00a1\u00danete a Catty en su aventura de pesca y conquista los mares captura\u00a0a\u00a0captura!",
+    "img_url": "https://placehold.co/300x200/262626/ffffff/png?text=Game",
+    "free": false,
+    "links": {
+      "website": "",
+      "store": "https://www.crazygames.com/game/catty-s-fishing-day",
+      "trailer": "https://www.youtube.com/watch?v=CeqAYLsBDlg"
+    },
+    "tags": {
+      "genre": [
+        "Aventura",
+        "Point and click"
+      ],
+      "language": [
+        "Español", "Inglés"
+      ],
+      "platforms": [
+        "Windows"
+      ]
+    },
+    "year": null,
+    "developer": "Parallax Fox"
   }
 ]

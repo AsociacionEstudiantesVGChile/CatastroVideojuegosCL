@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 import Header from "../../components/common/Header/Header";
@@ -5,99 +6,100 @@ import Footer from "../../components/common/Footer/Footer";
 
 import styles from "./search.module.css";
 
-import data from "../../data/videojuegos.json"
+import games_data from "../../data/videojuegos.json"
+import devs_data from "../../data/desarrolladores.json"
+import regions_data from "../../data/regions.json"
 import CardGame from "../../components/Search/CardGame";
-
-
+import { useFilter } from "../../hooks/useFilter";
+import FilterSection from "../../components/Search/FilterSection";
 
 const Search = () => {
-  const [filterYear, setFilterYear] = useState("All");
-  const [filterDev, setFilterDev] = useState("All");
-  const [sortOrder, setSortOrder] = useState("az");
+
+  //Custom Hook
+  const { filters, handleCheckboxChange, isChecked, clearCategory } = useFilter(['year', 'region', 'genre', 'language', 'platform']);
+
+  //States
   const [searchTerm, setSearchTerm] = useState("");
-  const [activeTags, setActiveTags] = useState([]);
+  const [sortOrder, setSortOrder] = useState("az");
+  const [activeSection, setActiveSection] = useState("year");
+
+  //Props to be passed to FilterSection Component
+  const filterProps = { filters, isChecked, handleCheckboxChange, activeSection, setActiveSection, clearCategory }
 
 
-  function matchesSearch(game, term){
+  const game_years = Array.from(new Set(games_data.map(game => game.year)));
+
+  //Filter options lists 
+  const years = Array.from(new Set([...game_years, ...devs_data.map(dev => dev.year)].filter(item => item != null))).sort((a, b) => b - a);
+  const genres = Array.from(new Set(games_data.map(game => game.tags.genre).flat())).sort();
+  const languages = Array.from(new Set(games_data.map(game => game.tags.language).flat()));
+  const platforms = Array.from(new Set(games_data.map(game => game.tags.platforms).flat()));
+
+  //Object to map a game name with its developer name
+  const dev_info = {};
+  devs_data.forEach(dev => {
+    dev.games.forEach(game => {
+      dev_info[`${game}/${dev.name}`] = dev;
+    })
+  })
+
+  //Games to show as a result of applied filters
+  const displayedItems = games_data.filter(game => (
+    filters.year.length === 0 || filters.year.includes(game.year) ||
+    filters.year.includes(dev_info[`${game.title}/${game.developer}`].year)) &&
+    (filters.region.length === 0 || dev_info[`${game.title}/${game.developer}`].region.some(region => filters.region.includes(region))) &&
+    (filters.genre.length === 0 || game.tags.genre.some(genre => filters.genre.includes(genre))) &&
+    (filters.language.length === 0 || game.tags.language.some(language => filters.language.includes(language))) &&
+    (filters.platform.length === 0 || game.tags.platforms.some(platform => filters.platform.includes(platform))) &&
+    (searchTerm === "" || matchesSearch(game, searchTerm))).sort((a, b) => {
+      switch (sortOrder) {
+        case 'az':
+          return a.title.localeCompare(b.title);
+        case 'za':
+          return b.title.localeCompare(a.title);
+        case 'recent':
+          return dev_info[`${b.title}/${b.developer}`].year - dev_info[`${a.title}/${a.developer}`].year;
+        case 'old':
+          return dev_info[`${a.title}/${a.developer}`].year - dev_info[`${b.title}/${b.developer}`].year;
+        default:
+          return 0;
+      }
+    });
+
+
+  function matchesSearch(game, term) {
     const lowerTerm = term.toLowerCase();
     return (
       game.title.toLowerCase().includes(lowerTerm) ||
-      game.developer.toLowerCase().includes(lowerTerm) ||
-      game.year.toString().includes(lowerTerm) ||
-      game.tags.some(tag => tag.toLowerCase().includes(lowerTerm))
+      game.developer.toLowerCase().includes(lowerTerm)
     );
   }
 
-  function toggleTag(tag){
-    setActiveTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
-  }
-
-
-  const devs = Array.from(new Set(data.map(game => game.developer)));
-  const years = Array.from(new Set(data.map(game => game.year))).sort((a, b) => b - a);
-  const allTags = Array.from(new Set(data.flatMap(game => game.tags)));
-
-  const displayedItems = data.filter(game => (filterDev === "All" || game.developer == filterDev) && (filterYear === "All" || game.year == filterYear) && (searchTerm === '' || matchesSearch(game, searchTerm)) && (activeTags.length === 0 || activeTags.every(tag => game.tags.includes(tag)))).sort((a,b) => {
-    switch(sortOrder){
-      case 'az':
-        return a.title.localeCompare(b.title);
-      case 'za':
-        return b.title.localeCompare(a.title);
-      case 'recent':
-        return b.year - a.year;
-      case 'old':
-        return a.year - b.year;
-      default:
-        return 0;
-    }
-  });
 
   return (
     <>
       <Header />
       <section id="search">
-        <h1>Buscar Videojuegos Chilenos</h1>
+        <div className={styles.topContainer}>
+          <h1>Buscar Videojuegos Chilenos</h1>
+          <a target="blank" className={styles.formButton} href="https://forms.gle/FzJGmLpAr7zrnb2x5">Sube tu juego!</a>
+        </div>
+
         <div className={styles.buscadorContainer}>
           <aside className={styles.sidebarFiltros}>
-            <form id="filtros-form">
-              <h3>Filtrar por:</h3>
-              <div>
-                <label htmlFor="filtro-anio">Año:</label>
-                <select value={filterYear} id="filtro-anio" name="anio" onChange={e => setFilterYear(e.target.value)}>
-                  <option value="All">Todos</option>
-                  {years.map(year => (
-                    <option key={year} value={year}>{year}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="filtro-desarrollador">Desarrollador:</label>
-                <select value={filterDev} id="filtro-desarrollador" name="desarrollador" onChange={e => setFilterDev(e.target.value)}>
-                  <option value="All">Todos</option>
-                  {devs.map(dev => (
-                    <option key={dev} value={dev}>{dev}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <strong>Etiquetas:</strong>
-                <div id="filtros-etiquetas">
-                  {allTags.map(tag => (
-                    <button type="button" key={tag} onClick={() => toggleTag(tag)}
-                    style={{
-                      backgroundColor: activeTags.includes(tag) ? "var(--amarillo)" : "var(--naranjo)"
-                    }}>
-                      {tag}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </form>
+            <h3>Filtrar por:</h3>
+            <FilterSection title="Año" options={years} category="year" filterProps={filterProps} />
+            <FilterSection title="Regiones" options={regions_data.map(region => region.value)}
+              category="region" names={regions_data.map(region => region.name)} filterProps={filterProps} />
+            <FilterSection title="Géneros" options={genres} category="genre" filterProps={filterProps} />
+            <FilterSection title="Idiomas" options={languages} category="language" filterProps={filterProps} />
+            <FilterSection title="Plataformas" options={platforms} category="platform" filterProps={filterProps} />
           </aside>
+
           <div className={styles.resultadosBuscador}>
             <div className={styles.ordenarBuscador}>
-              <label htmlFor="ordenar-select">Ordenar:</label>
-              <select value={sortOrder} id="ordenar-select" onChange={e => setSortOrder(e.target.value)}>
+              <label htmlFor="sort-select">Ordenar:</label>
+              <select value={sortOrder} id="sort-select" onChange={e => setSortOrder(e.target.value)}>
                 <option value="az">A-Z</option>
                 <option value="za">Z-A</option>
                 <option value="recent">Más nuevos</option>
@@ -106,24 +108,176 @@ const Search = () => {
               <input
                 type="text"
                 id="search-input"
-                value={searchTerm}
                 placeholder="Buscar por título o palabra clave"
                 style={{ marginLeft: "1rem" }}
                 onChange={e => setSearchTerm(e.target.value)}
               />
             </div>
-            <div id="search-results">
+
+
+            <div id="search-results" className={styles.resultsContainer}>
               {displayedItems.map(gameData =>
-                <CardGame title={gameData.title} devName={gameData.developer} year={gameData.year}
-                  description={gameData.description} imgUrl={gameData.img_url} tags={gameData.tags} />
+                <CardGame info={gameData} />
               )}
             </div>
           </div>
         </div>
-      </section>
+      </section >
       <Footer />
     </>
-  );
-};
+  )
+}
 
 export default Search;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { useState } from "react";
+
+// import Header from "../../components/common/Header/Header";
+// import Footer from "../../components/common/Footer/Footer";
+
+// import styles from "./search.module.css";
+
+// import data from "../../data/videojuegos.json"
+// import regions_data from "../../data/regions.json"
+// import CardGame from "../../components/Search/CardGame";
+
+
+
+// const Search = () => {
+//   // const [filterYear, setFilterYear] = useState("All");
+//   // const [filterRegion, setFilterRegion] = useState("All");
+//   // const [sortOrder, setSortOrder] = useState("az");
+//   // const [searchTerm, setSearchTerm] = useState("");
+//   // const [activeTags, setActiveTags] = useState([]);
+
+
+//   // function matchesSearch(game, term){
+//   //   const lowerTerm = term.toLowerCase();
+//   //   return (
+//   //     game.title.toLowerCase().includes(lowerTerm) ||
+//   //     game.developer.toLowerCase().includes(lowerTerm) ||
+//   //     game.year.toString().includes(lowerTerm) ||
+//   //     game.tags.some(tag => tag.toLowerCase().includes(lowerTerm))
+//   //   );
+//   // }
+
+//   // function toggleTag(tag){
+//   //   setActiveTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+//   // }
+
+
+//   // // const regions = Array.from(new Set(regdions_data.values()));
+//   // const years = Array.from(new Set(data.map(game => game.year))).sort((a, b) => b - a);
+//   // const allTags = Array.from(new Set(data.flatMap(game => game.tags)));
+
+//   const displayedItems = data/*data.filter(game => (filterYear === "All" || game.year == filterYear) && (searchTerm === '' || matchesSearch(game, searchTerm)) && (activeTags.length === 0 || activeTags.every(tag => game.tags.includes(tag)))).sort((a,b) => {
+//     switch(sortOrder){
+//       case 'az':
+//         return a.title.localeCompare(b.title);
+//       case 'za':
+//         return b.title.localeCompare(a.title);
+//       case 'recent':
+//         return b.year - a.year;
+//       case 'old':
+//         return a.year - b.year;
+//       default:
+//         return 0;
+//     }
+//   });*/
+
+//   return (
+//     <>
+//       <Header />
+//       <section id="search">
+//         <h1>Buscar Videojuegos Chilenos</h1>
+//         <div className={styles.buscadorContainer}>
+//           <aside className={styles.sidebarFiltros}>
+//             <form id="form-filters">
+//               <h3>Filtrar por:</h3>
+//               <div>
+//                 <label htmlFor="year-filter">Año:</label>
+//                 <select value={filterYear} id="year-filter" name="year" onChange={e => setFilterYear(e.target.value)}>
+//                   <option value="All">Todos</option>
+//                   {years.map(year => (
+//                     <option key={year} value={year}>{year}</option>
+//                   ))}
+//                 </select>
+//               </div>
+//               <div>
+//                 <label htmlFor="regions-filter">Regiones:</label>
+//                 {/* <select value={filterDev} id="regions-filter" name="regions" onChange={e => setFilterDev(e.target.value)}>
+//                   <option value="All">Todos</option>
+//                   {devs.map(dev => (
+//                     <option key={dev} value={dev}>{dev}</option>
+//                   ))}
+//                 </select> */}
+//               </div>
+//               <div>
+//                 <strong>Etiquetas:</strong>
+//                 <div id="tags-filter">
+//                   {/* {allTags.map(tag => (
+//                     <button type="button" key={tag} onClick={() => toggleTag(tag)}
+//                     style={{
+//                       backgroundColor: activeTags.includes(tag) ? "var(--amarillo)" : "var(--naranjo)"
+//                     }}>
+//                       {tag}
+//                     </button>
+//                   ))} */}
+//                 </div>
+//               </div>
+//             </form>
+//           </aside>
+//           <div className={styles.resultadosBuscador}>
+//             <div className={styles.ordenarBuscador}>
+//               <label htmlFor="sort-select">Ordenar:</label>
+//               <select value={sortOrder} id="sort-select" onChange={e => setSortOrder(e.target.value)}>
+//                 <option value="az">A-Z</option>
+//                 <option value="za">Z-A</option>
+//                 <option value="recent">Más nuevos</option>
+//                 <option value="old">Más antiguos</option>
+//               </select>
+//               <input
+//                 type="text"
+//                 id="search-input"
+//                 value={searchTerm}
+//                 placeholder="Buscar por título o palabra clave"
+//                 style={{ marginLeft: "1rem" }}
+//                 onChange={e => setSearchTerm(e.target.value)}
+//               />
+//             </div>
+//             <div id="search-results">
+//               {displayedItems.map(gameData =>
+//                 <CardGame title={gameData.title} devName={gameData.developer} year={gameData.year}
+//                   description={gameData.description} imgUrl={gameData.img_url} tags={gameData.tags.genre} />
+//               )}
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </>
+//   );
+// };
+
+// export default Search;

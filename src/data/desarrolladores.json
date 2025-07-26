@@ -1,0 +1,213 @@
+[
+  {
+    "name": "BalaStudio",
+    "solodeveloper": false,
+    "year": 2024,
+    "website": "",
+    "social_media": {
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "itch_io": "",
+      "steam": ""
+    },
+    "img_url": "",
+    "region": [
+      "Regi\u00f3n Metropolitana de Santiago"
+    ],
+    "email": "diegob12868@gmail.com",
+    "tags": {
+      "has_videogame_students": true,
+      "has_women": true,
+      "has_lgbtqia": false
+    },
+    "legal_status": "",
+    "team_size": 7,
+    "team_members": [
+      "Paulo Marques",
+      "Ignacia Lobos",
+      "Alejandra Rebolledo",
+      "Michelle Maldonado",
+      "Andr\u00e9s Arluciaga",
+      "Diego Bravo",
+      "Juan Pablo Arredondo"
+    ],
+    "games": [
+      "Overhaul"
+    ]
+  },
+  {
+    "name": "Psychobun ",
+    "solodeveloper": true,
+    "year": 2019,
+    "website": "",
+    "social_media": {
+      "twitter": "",
+      "instagram": "https://www.instagram.com/psychobun?igsh=Z2oxMDIwMXh1Mmsw ",
+      "linkedin": "",
+      "itch_io": "",
+      "steam": ""
+    },
+    "img_url": "",
+    "region": [
+      "Regi\u00f3n Metropolitana de Santiago"
+    ],
+    "email": "Psychofind@gmail.com",
+    "tags": {
+      "has_videogame_students": true,
+      "has_women": false,
+      "has_lgbtqia": false
+    },
+    "legal_status": "",
+    "team_size": 1,
+    "team_members": "Psychobun ",
+    "games": [
+      "Psychofind: Relativity "
+    ]
+  },
+  {
+    "name": "Expropiaci\u00f3n Digital",
+    "solodeveloper": false,
+    "year": 2023,
+    "website": "https://antestodoestoeracampo.itch.io/ateec?fbclid=PAQ0xDSwKzQoBleHRuA2FlbQIxMAABp-2EF_OSAsmQlZlxojiMEgskUsyiGC8g5pAgmbUYgyi1riHVdCCwCueM-Qol_aem__CDzbKeniAa7L_8sn5vOnA",
+    "social_media": {
+      "twitter": "",
+      "instagram": "@antestodoestoeracampohd",
+      "linkedin": "",
+      "itch_io": "https://antestodoestoeracampo.itch.io/ateec?fbclid=PAQ0xDSwKzQoBleHRuA2FlbQIxMAABp-2EF_OSAsmQlZlxojiMEgskUsyiGC8g5pAgmbUYgyi1riHVdCCwCueM-Qol_aem__CDzbKeniAa7L_8sn5vOnA",
+      "steam": ""
+    },
+    "img_url": "",
+    "region": [
+      "Regi\u00f3n de Valpara\u00edso",
+      "Regi\u00f3n Metropolitana de Santiago"
+    ],
+    "email": "linwi.vargas@gmail.com",
+    "tags": {
+      "has_videogame_students": true,
+      "has_women": false,
+      "has_lgbtqia": false
+    },
+    "legal_status": "",
+    "team_size": 3,
+    "team_members": [
+      "Linwi",
+      "Nagato",
+      "Makise"
+    ],
+    "games": [
+      "Antes todo esto era campo"
+    ]
+  },
+  {
+    "name": "Expropiaci\u00f3n Digital",
+    "solodeveloper": false,
+    "year": 2025,
+    "website": "",
+    "social_media": {
+      "twitter": "",
+      "instagram": "https://www.instagram.com/expropiaciondigital/",
+      "linkedin": "",
+      "itch_io": "",
+      "steam": ""
+    },
+    "img_url": "",
+    "region": [
+      "Regi\u00f3n de Valpara\u00edso",
+      "Regi\u00f3n Metropolitana de Santiago"
+    ],
+    "email": "v.vigores@gmail.com",
+    "tags": {
+      "has_videogame_students": true,
+      "has_women": true,
+      "has_lgbtqia": false
+    },
+    "legal_status": "",
+    "team_size": 5,
+    "team_members": [
+      "Linwi",
+      "Maxi",
+      "Maju",
+      "Nhesta",
+      "Vixo"
+    ],
+    "games": [
+      "La Tirana 2666"
+    ]
+  },
+  {
+    "name": "UndeadPudu",
+    "solodeveloper": true,
+    "year": 2006,
+    "website": "https://josephlamartine.itch.io/",
+    "social_media": {
+      "twitter": "joeylamartine",
+      "instagram": "cyber.demonio",
+      "linkedin": "",
+      "itch_io": "https://josephlamartine.itch.io/",
+      "steam": ""
+    },
+    "img_url": "",
+    "region": [
+      "Regi\u00f3n Metropolitana de Santiago"
+    ],
+    "email": "joseph.lamartine@ugm.cl",
+    "tags": {
+      "has_videogame_students": true,
+      "has_women": false,
+      "has_lgbtqia": false
+    },
+    "legal_status": "",
+    "team_size": 1,
+    "team_members": "UndeadPudu",
+    "games": [
+      "GATE (Demo)",
+      "Pulse",
+      "Mr. Mix"
+    ]
+  },
+  {
+    "name": "Parallax Fox",
+    "solodeveloper": false,
+    "year": 2019,
+    "website": "",
+    "social_media": {
+      "twitter": "https://x.com/ParallaxFox",
+      "instagram": "https://www.instagram.com/parallaxfoxgames/",
+      "linkedin": "",
+      "itch_io": "https://parallaxfox.itch.io/",
+      "steam": ""
+    },
+    "img_url": "",
+    "region": [
+      "Regi\u00f3n Metropolitana de Santiago"
+    ],
+    "email": "parallaxfoxgamedev@gmail.com",
+    "tags": {
+      "has_videogame_students": true,
+      "has_women": true,
+      "has_lgbtqia": false
+    },
+    "legal_status": "",
+    "team_size": 13,
+    "team_members": [
+      "Vicente Figueroa (Neki)",
+      "Daniela Lagos (Tortu)",
+      "Rolando Mora (Rolz)",
+      "Daniel Sotelo (El_Dassy)",
+      "Hermann Castillo (Jappetto)",
+      "Natanael Contreras (Natto)",
+      "Catalina Lopez (CataXDRK)",
+      "Cris Lagos (Cris)",
+      "Angela Carre\u00f1o (Angy)",
+      "Victor Fernandez (Yuu)",
+      "Romina Claro (Marmotita/Romy)",
+      "Constanza Contreras (Cybercatt)",
+      "Ximena Perez (GeargiaXIII)"
+    ],
+    "games": [
+      "Protect_Protocol_",
+      "Catty's Fishing Day"
+    ]
+  }
+]
