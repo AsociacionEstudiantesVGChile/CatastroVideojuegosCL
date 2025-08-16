@@ -4,6 +4,7 @@ import About from "./pages/About/About";
 import Join from "./pages/Join/Join";
 import Search from "./pages/Search/Search";
 import Volunteer from "./pages/Volunteer/Volunteer";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/join" element={<Join />} />
       <Route path="/search" element={<Search />} />
       <Route path="/volunteer" element={<Volunteer />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
