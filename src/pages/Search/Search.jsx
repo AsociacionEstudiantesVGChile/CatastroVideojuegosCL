@@ -85,8 +85,8 @@ const Search = () => {
           <a target="blank" className={styles.formButton} href="https://forms.gle/FzJGmLpAr7zrnb2x5">Sube tu juego!</a>
         </div>
 
-        <div className={styles.buscadorContainer}>
-          <aside className={styles.sidebarFiltros}>
+        <div className={styles.searchContainer}>
+          <aside className={styles.sidebarFilters}>
             <h3>Filtrar por:</h3>
             <FilterSection title="Año" options={years} category="year" filterProps={filterProps} />
             <FilterSection title="Regiones" options={regions_data.map(region => region.value)}
@@ -96,8 +96,8 @@ const Search = () => {
             <FilterSection title="Plataformas" options={platforms} category="platform" filterProps={filterProps} />
           </aside>
 
-          <div className={styles.resultadosBuscador}>
-            <div className={styles.ordenarBuscador}>
+          <div className={styles.searchResults}>
+            <div className={styles.sortSearch}>
               <label htmlFor="sort-select">Ordenar:</label>
               <select value={sortOrder} id="sort-select" onChange={e => setSortOrder(e.target.value)}>
                 <option value="az">A-Z</option>
