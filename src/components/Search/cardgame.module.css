@@ -4,7 +4,17 @@
     
 }
 
+
 .dev-name{
+    text-decoration: none;
+    color: black;
+}
+
+.dev-name:hover h2{
+    scale: 1.05;
+}
+
+.dev-name h2{
     font-size:medium;
 }
 

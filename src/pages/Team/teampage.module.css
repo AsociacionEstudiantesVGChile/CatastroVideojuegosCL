@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    border: none;
+    width: 70%;
+    align-self: center;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dev-name {
+    font-size: 3rem;
+    align-self: center;
+}
+
+.games-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    /* margin: 2rem auto; */
+    justify-content: flex-start;
+}
+
+.card-game {
+    text-decoration: none;
+    color: black;
+}
+
+.card-game:hover img {
+    scale: 1.05;
+}

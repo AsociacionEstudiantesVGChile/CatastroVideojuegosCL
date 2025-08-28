@@ -43,6 +43,15 @@
   flex-wrap: wrap;
 }
 
+.card-game{
+  text-decoration: none;
+  color: black;
+}
+
+.card-game:hover img{
+  scale: 1.05;
+}
+
 
 @media (max-width: 800px) {
   .buscador-container {

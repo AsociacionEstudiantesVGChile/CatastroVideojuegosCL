@@ -2,7 +2,7 @@
 import styles from "./cardgame.module.css";
 import TagList from "./TagList";
 
-const CardGame = ({info}) => {
+const CardGame = ({ info, dev_id }) => {
 
     return (
         <div className={styles.container}>
@@ -10,7 +10,9 @@ const CardGame = ({info}) => {
             </img>
             <div className={styles.contentHolder}>
                 <h1 className={styles.title}>{info.title}</h1>
-                <h2 className={styles.devName}>{info.developer}</h2>
+                <a className={styles.devName} href={`#/team/${dev_id}`}>
+                    <h2 >{info.developer}</h2>
+                </a>
                 <h3 className={styles.year}>{info.year}</h3>
                 <p className={styles.description}>{info.description}</p>
                 <TagList tags={info.tags.genre} />

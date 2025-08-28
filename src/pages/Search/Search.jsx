@@ -117,7 +117,9 @@ const Search = () => {
 
             <div id="search-results" className={styles.resultsContainer}>
               {displayedItems.map(gameData =>
-                <CardGame info={gameData} />
+                <a className={styles.cardGame} href={`#/game/${games_data.findIndex(item => item === gameData)}`}>
+                  <CardGame info={gameData} dev_id={devs_data.findIndex(item => item === dev_info[`${gameData.title}/${gameData.developer}`])}/>
+                </a>
               )}
             </div>
           </div>
