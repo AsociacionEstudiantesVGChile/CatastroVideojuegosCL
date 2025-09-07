@@ -1,0 +1,66 @@
+[
+    {
+        "value": "Región de Arica y Parinacota",
+        "name": "XV - Arica y Parinacota"
+    },
+    {
+        "value": "Región de Tarapacá",
+        "name": "I - Tarapacá"
+    },
+    {
+        "value": "Región de Antofagasta",
+        "name": "II - Antofagasta"
+    },
+    {
+        "value": "Región de Atacama",
+        "name": "III - Atacama"
+    },
+    {
+        "value": "Región de Coquimbo",
+        "name": "IV - Coquimbo"
+    },
+    {
+        "value": "Región de Valparaíso",
+        "name": "V - Valparaíso"
+    },
+    {
+        "value": "Región Metropolitana de Santiago",
+        "name": "RM - Metropolitana"
+    },
+    {
+        "value": "Región del Libertador General Bernardo O’Higgins",
+        "name": "VI - Bernardo O'higgins"
+    },
+    {
+        "value": "Región del Maule",
+        "name": "VII - Maule"
+    },
+    {
+        "value": "Región de Ñuble",
+        "name": "XVI - Ñuble"
+    },
+    {
+        "value": "Región del Biobío",
+        "name": "VIII - Biobío"
+    },
+    {
+        "value": "Región de La Araucanía",
+        "name": "IX - Araucanía"
+    },
+    {
+        "value": "Región de Los Ríos",
+        "name": "XIV - Los Ríos"
+    },
+    {
+        "value": "Región de Los Lagos",
+        "name": "X - Los Lagos"
+    },
+    {
+        "value": "Región de Aysén del General Carlos Ibáñez del Campo",
+        "name": "XI - Aysén"
+    },
+    {
+        "value": "Región de Magallanes y de la Antártica Chilena",
+        "name": "XII - Magallanes"
+    }
+]

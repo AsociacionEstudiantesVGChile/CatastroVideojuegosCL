@@ -1,0 +1,7 @@
+
+.tag-container{
+    margin: .5rem;
+    display: flex;
+    gap: .5rem;
+    padding: 0;
+}

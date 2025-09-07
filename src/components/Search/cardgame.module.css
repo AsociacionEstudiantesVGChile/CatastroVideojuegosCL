@@ -1,0 +1,27 @@
+
+.container{
+    width:295px;
+    
+}
+
+.dev-name{
+    font-size:medium;
+}
+
+.button-link {
+    text-decoration: none;
+    color: black;
+    background-color: var(--naranjo);
+    padding: 10px 20px;
+    border-radius: 45px;
+}
+
+
+.description{
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
